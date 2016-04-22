@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+	"name": "Youtube Thumbnail Preview",
+	"description": "View youtube thumbnails with the click of a button.",
+	"version": "0.01",
+	"permissions":
+	[
+    "activeTab",
+    "https://ajax.googleapis.com/"
+	],
+	"browser_action": {
+   "default_popup": "index.html"
+   }
+}
