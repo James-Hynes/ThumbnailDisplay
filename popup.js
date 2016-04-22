@@ -1,13 +1,6 @@
-console.log('here');
 document.addEventListener('DOMContentLoaded', function() {
-  var query = { active: true, currentWindow: true };
-  chrome.tabs.query(query, function(tab) {
-    chrome.tabs.execute
+  var img = document.getElementById('thumbnail');
+  chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function(tabs) {
+    img.src = `https://i.ytimg.com/vi/${tabs[0].url.split('https://www.youtube.com/watch?v=')[1]}/maxresdefault.jpg`;
   });
 });
-
-function callback() {
-  //var currentTab = tabs[0];
-  console.log(document.body.childNodes[0]);
-  //console.log(currentTab);
-}
