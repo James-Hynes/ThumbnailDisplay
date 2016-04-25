@@ -13,5 +13,9 @@
    "default_popup": "popup.html",
    "default_icon": "assets/icon.png",
    "default_title": "Show thumbnail"
-   }
+ },
+ "icons": {
+   "48": "assets/icon48.png",
+   "128": "assets/icon128.png"
+ }
 }
