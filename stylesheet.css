@@ -10,6 +10,19 @@ img {
   padding: 0px;
 }
 
-.text-box {
-  
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+input {
+  margin: 0px;
+  padding: 5px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+input:focus,
+input.focus {
+  border: solid 5px #969696;
 }

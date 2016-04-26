@@ -3,16 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var url = tabs[0].url;
     if(url.includes('https://www.youtube.com/watch?v=')) {
       loadImage(url)
-      console.log('2');
     } else {
-      console.log('1');
       textEntry();
     }
   });
 });
 
 function parseURL(url) {
-  return (url.match(/watch\?v=[^\&]+/)[0].replace('watch?v=', ''));
+  return (url.includes('watch?v=') ? (url.match(/watch\?v=[^\&]+/)[0].replace('watch?v=', '')) : url)
 }
 
 function loadImage(url) {
