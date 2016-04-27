@@ -13,7 +13,6 @@ function parseURL(url) {
   return (url.includes('watch?v=') ? (url.match(/watch\?v=[^\&]+/)[0].replace('watch?v=', '')) : url)
 }
 
-
 function loadImage(url) {
   var img = document.getElementById('thumbnail');
   var thumb_id = parseURL(url);
@@ -29,8 +28,7 @@ function handleInput(input) {
 
 function createTextEntry() {
   var input = document.createElement('INPUT');
-  input.id = 'text-box';
-  input.autofocus = true;
+  input.id = 'text-box'; input.autofocus = true;
   document.body.appendChild(input);
   input.addEventListener('keypress', function(info) {
     if(info['keyIdentifier'] === 'Enter') {
@@ -46,5 +44,4 @@ function createTextEntry() {
   entry_button.onclick = function() {
     handleInput(input);
   }
-
 }
