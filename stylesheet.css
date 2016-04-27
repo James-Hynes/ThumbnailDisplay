@@ -20,9 +20,17 @@ input {
   padding: 5px;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
+  font-family: 'Lucida Console', Monaco, monospace;
 }
 
-input:focus,
-input.focus {
+/*input:focus {
   border: solid 5px #969696;
+}*/
+
+#text-entry {
+  text-align: center;
+}
+
+button {
+  width: 100%;
 }
